@@ -1,0 +1,62 @@
+#band-members {
+	.members-list {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		.member {
+			margin: 0 auto;
+			max-width: 300px;
+			background: #1a1a1a;
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+			border: 1px solid #2a2f3a;
+			transition: transform 0.3s ease;
+
+			&:hover {
+				transform: translateY(-5px);
+			}
+
+			figure {
+				margin: 0;
+
+				img {
+					width: 100%;
+					display: block;
+					object-fit: cover;
+					object-position: top center;
+				}
+
+				figcaption {
+					padding: 12px 16px;
+					
+					background: #111;
+					@media (min-width: 768px) {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	#band-members {
+		padding-bottom: 77px;
+		
+	}
+}
+
+
+@media (min-width: 767px) {
+	#band-members {
+
+		.members-list {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}

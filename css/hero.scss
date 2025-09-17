@@ -1,0 +1,61 @@
+.hero {
+	position: relative;
+	background: url("../img/concert-bg.jpg") center/cover no-repeat;
+	color: #fff;
+	text-align: left;
+
+	min-height: 320px;
+	display: flex;
+	align-items: center;
+
+	&__overlay {
+		position: absolute;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.55);
+	}
+
+	h1 {
+		margin-bottom: 20px;
+	}
+	.hero__subtitle {
+		font-size: 1.1rem;
+		margin-bottom: 1.944rem;
+	}
+
+	p {
+		margin-top: 1.111rem;
+		margin-bottom: 1.111rem;
+	}
+	.btn {
+		margin-top: 1.1rem;
+	}
+
+	.highlight {
+		color: #1e90ff;
+		font-weight: 700;
+	}
+
+	.highlight-link {
+		color: #00c3ff;
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.hero {
+		padding-top: 126px;
+		padding-bottom: 123px;
+		.hero__subtitle {
+			font-size: 1.1rem;
+		}		
+
+		p {
+			font-size: 16px;
+		}
+	}
+}

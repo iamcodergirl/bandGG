@@ -1,0 +1,31 @@
+#about {
+	background: linear-gradient(135deg, #121c21, #1e1116);
+
+	h2{
+		margin-bottom: 26px;
+	}
+}
+.about-band__content {
+	overflow: hidden;
+
+	img + p {
+		margin-top: 0;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+        margin-bottom: 30px;
+		border-radius: 8px;
+		object-fit: cover;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+		@media (min-width: 678px) {
+			float: right;
+			max-width: 448px;
+			width: 50%;
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+	}
+}
