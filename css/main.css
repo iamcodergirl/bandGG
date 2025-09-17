@@ -349,6 +349,7 @@ textarea {
 }
 .hero .btn {
   margin-top: 1.1rem;
+  padding: 15px 20px;
 }
 .hero .highlight {
   color: #1e90ff;
