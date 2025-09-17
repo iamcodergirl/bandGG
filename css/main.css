@@ -209,8 +209,18 @@ section {
   background: #ffb400;
 }
 
+.table-scrollX {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 .concerts-table {
   width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
   border-collapse: collapse;
   background: #1e1e24;
   border-radius: 10px;

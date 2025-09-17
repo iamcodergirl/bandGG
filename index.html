@@ -4,10 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="keywords" content="Band ...»" />
-		<meta
-			name="description"
-			content="Band ..."
-		/>
+		<meta name="description" content="Band ..." />
 		<title>G & G</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,9 +47,7 @@
 							>
 						</li>
 						<li>
-							<a href="#contact" class="header__link"
-								>Контакти</a
-							>
+							<a href="#contact" class="header__link">Контакти</a>
 						</li>
 					</ul>
 				</nav>
@@ -97,75 +92,77 @@
 
 			<section id="events">
 				<div class="container">
-					<table class="concerts-table">
-						<thead>
-							<tr>
-								<th colspan="4">
-									<strong>Найближчі концерти</strong>
-								</th>
-							</tr>
-							<tr>
-								<th>
-									<span class="color-secondary"
-										>Місто / Заклад</span
-									>
-								</th>
-								<th>
-									<span class="color-secondary"
-										>К-сть місць</span
-									>
-								</th>
-								<th>
-									<span class="color-secondary"
-										>Дата і час</span
-									>
-								</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Київ — Docker-G Pub</td>
-								<td>250</td>
-								<td>25.10.2025, 19:00</td>
-								<td>
-									<button class="btn btn-ticket">
-										Замовити квиток
-									</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Львів — !FESTrepublic</td>
-								<td>400</td>
-								<td>01.11.2025, 20:00</td>
-								<td>
-									<button class="btn btn-ticket">
-										Замовити квиток
-									</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Одеса — Зелений театр</td>
-								<td>700</td>
-								<td>09.11.2025, 19:30</td>
-								<td>
-									<button class="btn btn-ticket">
-										Замовити квиток
-									</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Харків — ArtZavod</td>
-								<td>500</td>
-								<td>16.11.2025, 19:00</td>
-								<td>
-									<button class="btn btn-ticket">
-										Замовити квиток
-									</button>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-scrollX">
+						<table class="concerts-table">
+							<thead>
+								<tr>
+									<th colspan="4">
+										<strong>Найближчі концерти</strong>
+									</th>
+								</tr>
+								<tr>
+									<th>
+										<span class="color-secondary"
+											>Місто / Заклад</span
+										>
+									</th>
+									<th>
+										<span class="color-secondary"
+											>К-сть місць</span
+										>
+									</th>
+									<th>
+										<span class="color-secondary"
+											>Дата і час</span
+										>
+									</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Київ — Docker-G Pub</td>
+									<td>250</td>
+									<td>25.10.2025, 19:00</td>
+									<td>
+										<button class="btn btn-ticket">
+											Замовити квиток
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Львів — !FESTrepublic</td>
+									<td>400</td>
+									<td>01.11.2025, 20:00</td>
+									<td>
+										<button class="btn btn-ticket">
+											Замовити квиток
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Одеса — Зелений театр</td>
+									<td>700</td>
+									<td>09.11.2025, 19:30</td>
+									<td>
+										<button class="btn btn-ticket">
+											Замовити квиток
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Харків — ArtZavod</td>
+									<td>500</td>
+									<td>16.11.2025, 19:00</td>
+									<td>
+										<button class="btn btn-ticket">
+											Замовити квиток
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</section>
 			<section id="band-members" aria-labelledby="band-title">
@@ -415,11 +412,21 @@
 				>
 					<div class="col-2">
 						<label for="name_ticket">Ім'я</label>
-						<input type="text" id="name_ticket" name="name_ticket" required />
+						<input
+							type="text"
+							id="name_ticket"
+							name="name_ticket"
+							required
+						/>
 					</div>
 					<div class="col-2">
 						<label for="email_ticket">Email</label>
-						<input type="email" id="email_ticket" name="email_ticket" required />
+						<input
+							type="email"
+							id="email_ticket"
+							name="email_ticket"
+							required
+						/>
 					</div>
 					<div class="col-full">
 						<label for="message_ticket">Повідомлення</label>
